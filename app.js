@@ -14,7 +14,7 @@ app.use(morgan('tiny'));
 // Middleware for adding delaying
 // app.use(function(req,res,next){setTimeout(next,3000)});
 
-app.use('/public', express.static( path.join( __dirname, './public') ));
+app.use('/public', express.static( path.join( __dirname, '../public') ));
 // app.use('/', express.static( path.join( __dirname, './frontend') ));
 
 
