@@ -40,6 +40,13 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+<<<<<<< HEAD
+=======
+# Public directories
+public/
+frontend/
+
+>>>>>>> e211a68dc2d364f1833cb1bb43c83b581699046f
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -72,8 +79,13 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+<<<<<<< HEAD
 .env
 .env.test
+=======
+# .env
+# .env.test
+>>>>>>> e211a68dc2d364f1833cb1bb43c83b581699046f
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
