@@ -27,6 +27,27 @@ class BaseRepository{
 
     }
 
+    async create( _OBJECT ){
+
+        let success, error;
+
+        try{
+            success = await this.model.create( _OBJECT );
+        }
+        catch( Excp ){
+            error = Excp;
+        }
+        
+
+        return new Promise((resolve, reject) => {
+
+            if( success ) resolve( success );
+            else reject( new Error( error ) );
+
+        });
+
+    }
+
 }
 
 module.exports = BaseRepository;
