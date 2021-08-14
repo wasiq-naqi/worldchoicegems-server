@@ -15,7 +15,7 @@ module.exports = () => {
                 HOST: process.env.DEV_DB_HOST,
                 PORT: process.env.DEV_DB_PORT,
                 USER: process.env.DEV_DB_USER,
-                PASSWORD: process.env.DEV_DB_PASSWORD,
+                PASSWORD: process.env.DEV_DB_PASS,
                 DATABASE: process.env.DEV_DB_DATABASE,
             },
             TOKEN:{
@@ -33,7 +33,7 @@ module.exports = () => {
                 HOST: process.env.PROD_DB_HOST,
                 PORT: process.env.PROD_DB_PORT,
                 USER: process.env.PROD_DB_USER,
-                PASSWORD: process.env.PROD_DB_PASSWORD,
+                PASSWORD: process.env.PROD_DB_PASS,
                 DATABASE: process.env.PROD_DB_DATABASE,
             },
             TOKEN:{

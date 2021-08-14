@@ -3,7 +3,7 @@ let config = require('../config')();
 module.exports = {
   development: {
     username: config.DB.USER,
-    password: config.DB.PASS,
+    password: config.DB.PASSWORD,
     database: config.DB.DATABASE,
     host: config.DB.HOST,
     port: config.DB.PORT,
@@ -14,8 +14,8 @@ module.exports = {
   },
   test: {
     username: config.DB.USER,
-    password: config.DB.PASS,
-    database: config.DB.DATABSE,
+    password: config.DB.PASSWORD,
+    database: config.DB.DATABASE,
     host: config.DB.HOST,
     port: config.DB.PORT,
     dialect: config.DB.DIALECT,
@@ -25,8 +25,8 @@ module.exports = {
   },
   production: {
     username: config.DB.USER,
-    password: config.DB.PASS,
-    database: config.DB.DATABSE,
+    password: config.DB.PASSWORD,
+    database: config.DB.DATABASE,
     host: config.DB.HOST,
     port: config.DB.PORT,
     dialect: config.DB.DIALECT,
