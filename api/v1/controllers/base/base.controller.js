@@ -2,9 +2,7 @@ class BaseController{
 
     // let model;
     
-    constructor(){
-
-    }
+    constructor(){ }
 
     // function getAllByPagination(){
 

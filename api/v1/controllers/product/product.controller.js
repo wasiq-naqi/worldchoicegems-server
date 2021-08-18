@@ -10,13 +10,13 @@ class ProductController {
         let { pageNo, pageSize, category, type, rangeMin, rangeMax, feature } = req.query
 
         try{
-
+            
             let response = await service.getAllByPagination(pageNo, pageSize, { category, type, rangeMin, rangeMax, feature });
             res.send(response);
 
         }
         catch(Excp){
-            console.log(Excp);
+
             next(Excp);
 
         }
