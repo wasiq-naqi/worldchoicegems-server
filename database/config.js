@@ -9,7 +9,7 @@ module.exports = {
     port: config.DB.PORT,
     dialect: config.DB.DIALECT,
     "operatorsAliases": 0,
-    logging: console.log,
+    logging: false,
     timezone: '+05:00'
   },
   test: {

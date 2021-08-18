@@ -8,10 +8,13 @@ class InitializeController {
 
         try{
 
-            await db.sequelize.authenticate()
+            await db.sequelize.authenticate();
+            await db.sequelize.sync();
+            
             res.send( {
-                Environment: process.env.NODE_ENV,
+                Environment: process.env.NODE_ENV || 'development',
                 Databse: 'connected',
+                Syncronize: true,
             } );
 
         }
